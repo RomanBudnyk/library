@@ -38,3 +38,8 @@
 2018-07-17 22:15:58 INFO  LibraryActivities:33 - Reading from file successfully.
 2018-07-17 22:15:58 INFO  LibraryActivities:108 - Printed all books.
 2018-07-17 22:16:01 INFO  LibraryActivities:116 - Exit from the program.
+2018-07-17 22:46:29 INFO  Main:11 - App started.
+2018-07-17 22:46:31 INFO  LibraryActivities:32 - Reading from file successfully.
+2018-07-17 22:46:34 INFO  LibraryActivities:22 - Collection has been written into file successfully.
+2018-07-17 22:46:34 INFO  LibraryActivities:46 - Book created successfully.
+2018-07-17 22:46:37 INFO  LibraryActivities:115 - Exit from the program.
