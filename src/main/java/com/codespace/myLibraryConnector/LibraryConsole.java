@@ -10,7 +10,6 @@ class LibraryConsole {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
     private Book book;
 
-
     Book addingOfTheBook() {
         System.out.print("Enter author's name: ");
         String author = validationString("Author ");

@@ -7,7 +7,6 @@ public class SortBooksByGenreCommand implements Command {
         this.libraryActivities = libraryActivities;
     }
 
-
     public void execute() {
         libraryActivities.sortBooksByGenre();
     }

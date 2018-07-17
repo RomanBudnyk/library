@@ -7,7 +7,6 @@ public class ViewAllBooksCommand implements Command {
         this.libraryActivities = libraryActivities;
     }
 
-
     public void execute() {
         libraryActivities.viewAllBooks();
     }
