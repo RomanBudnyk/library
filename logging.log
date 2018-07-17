@@ -1,0 +1,40 @@
+2018-07-17 22:08:15 INFO  Main:11 - App started.
+2018-07-17 22:08:18 INFO  LibraryActivities:195 - Empty collection.
+2018-07-17 22:08:31 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-17 22:08:31 INFO  LibraryActivities:47 - Book created successfully.
+2018-07-17 22:08:36 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:08:36 INFO  LibraryActivities:105 - Match in author found.
+2018-07-17 22:08:41 INFO  LibraryActivities:200 - Exit from the program.
+2018-07-17 22:10:01 INFO  Main:11 - App started.
+2018-07-17 22:10:05 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:06 INFO  LibraryActivities:155 - No books with such author.
+2018-07-17 22:10:08 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:15 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-17 22:10:15 INFO  LibraryActivities:47 - Book created successfully.
+2018-07-17 22:10:17 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:17 INFO  LibraryActivities:109 - Printed all books.
+2018-07-17 22:10:23 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:29 INFO  LibraryActivities:148 - Match in author found.
+2018-07-17 22:10:29 INFO  LibraryActivities:148 - Match in author found.
+2018-07-17 22:10:32 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:37 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-17 22:10:37 INFO  LibraryActivities:62 - Deletion of the book successfully.
+2018-07-17 22:10:40 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:40 INFO  LibraryActivities:109 - Printed all books.
+2018-07-17 22:10:47 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:48 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-17 22:10:48 INFO  LibraryActivities:62 - Deletion of the book successfully.
+2018-07-17 22:10:50 INFO  LibraryActivities:112 - Empty collection.
+2018-07-17 22:10:52 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:52 INFO  LibraryActivities:74 - Empty collection.
+2018-07-17 22:10:57 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:10:57 INFO  LibraryActivities:159 - Empty collection.
+2018-07-17 22:11:00 INFO  LibraryActivities:117 - Exit from the program.
+2018-07-17 22:15:50 INFO  Main:11 - App started.
+2018-07-17 22:15:52 INFO  LibraryActivities:111 - Empty collection.
+2018-07-17 22:15:54 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:15:57 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-17 22:15:57 INFO  LibraryActivities:47 - Book created successfully.
+2018-07-17 22:15:58 INFO  LibraryActivities:33 - Reading from file successfully.
+2018-07-17 22:15:58 INFO  LibraryActivities:108 - Printed all books.
+2018-07-17 22:16:01 INFO  LibraryActivities:116 - Exit from the program.
