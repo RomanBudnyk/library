@@ -7,7 +7,6 @@ public class DeleteBookCommand implements Command {
         this.libraryActivities = libraryActivities;
     }
 
-
     public void execute() {
         libraryActivities.deleteBook();
     }
