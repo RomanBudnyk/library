@@ -9,7 +9,6 @@ import java.util.*;
 public class LibraryActivities {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
 
-    private Book book;
     private List<Book> bookList = new LinkedList<>();
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
@@ -41,7 +40,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        book = libraryConsole.addingOfTheBook();
+        Book book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
         logger.info("Book created successfully.");
@@ -121,7 +120,7 @@ public class LibraryActivities {
         System.out.println(book.toString());
     }
 
-    void viewInfoBySetCriteria(String string, int check) {
+    private void viewInfoBySetCriteria(String string, int check) {
         if (bookFile.exists()) {
             readFromTheFile();
         }
