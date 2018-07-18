@@ -65,7 +65,6 @@ public class LibraryActivities {
                     counter--;
                 }
             }
-
             if (tempBook.size() > 1) {
                 view.printSmallMessage("Enter the author name: ");
                 author = libraryConsole.printing();
