@@ -1,7 +1,7 @@
 package com.codespace.myLibraryConnector;
 
 public class SortBooksByAuthorCommand implements Command {
-    LibraryActivities libraryActivities;
+    private LibraryActivities libraryActivities;
 
     public SortBooksByAuthorCommand(LibraryActivities libraryActivities) {
         this.libraryActivities = libraryActivities;
