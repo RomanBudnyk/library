@@ -26,6 +26,7 @@ public class LibraryActivities {
         }
     }
 
+    @SuppressWarnings("unchecked")
     private void readFromTheFile() {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(bookFile))) {
             bookList = (List<Book>) objectInputStream.readObject();
