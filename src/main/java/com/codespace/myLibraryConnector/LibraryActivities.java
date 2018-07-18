@@ -10,7 +10,6 @@ public class LibraryActivities {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
 
     private List<Book> bookList = new LinkedList<>();
-    private Book book;
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
@@ -42,7 +41,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        book = libraryConsole.addingOfTheBook();
+        Book book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
         logger.info("Book created successfully.");
@@ -116,35 +115,6 @@ public class LibraryActivities {
         }
 
     }
-
-
-//    void deleteBook() {
-//        if (bookFile.exists()) {
-//            readFromTheFile();
-//        }
-//        if (!bookList.isEmpty() && bookFile.exists()) {
-//            view.printSmallMessage("Enter book's name you want to delete: ");
-//            String bookName = libraryConsole.printing();
-//            int counter = 0;
-//            for (Book book : bookList) {
-//                if (book.getName().equals(bookName)) {
-//                    bookList.remove(book);
-//                    writeIntoTheFile(bookList);
-//                    logger.info("Deletion of the book successfully.");
-//                    counter++;
-//                } else {
-//                    counter--;
-//                }
-//            }
-//            if (counter < 0) {
-//                view.printMessage("No book with such name!");
-//                logger.info("No such books.");
-//            }
-//        } else {
-//            view.printMessage("No books in the collection!");
-//            logger.info("Empty collection.");
-//        }
-//    }
 
     void viewBooksByAuthor() {
         viewInfoBySetCriteria("author", 1);
