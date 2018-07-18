@@ -85,7 +85,7 @@ public class Controller {
 
     private int inputItem(int a) {
         while (true) {
-            view.printMessage(View.INVITATION);
+            view.printSmallMessage(View.INVITATION);
             Scanner scanner = new Scanner(System.in);
             try {
                 int item = scanner.nextInt();

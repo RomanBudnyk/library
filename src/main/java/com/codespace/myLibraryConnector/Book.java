@@ -28,64 +28,32 @@ public class Book implements Serializable {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPublisherName() {
         return publisherName;
     }
 
-    public void setPublisherName(String publisherName) {
-        this.publisherName = publisherName;
-    }
-
     public int getPublisherYear() {
         return publisherYear;
-    }
-
-    public void setPublisherYear(int publisherYear) {
-        this.publisherYear = publisherYear;
     }
 
     public String getPublisherCity() {
         return publisherCity;
     }
 
-    public void setPublisherCity(String publisherCity) {
-        this.publisherCity = publisherCity;
-    }
-
     public int getYear() {
         return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public int getPages() {
         return pages;
     }
 
-    public void setPages(int pages) {
-        this.pages = pages;
-    }
-
     public String getGenre() {
         return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
     }
 
     public String toString() {

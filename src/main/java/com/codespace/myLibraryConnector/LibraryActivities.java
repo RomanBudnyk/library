@@ -10,6 +10,7 @@ public class LibraryActivities {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
 
     private List<Book> bookList = new LinkedList<>();
+    private Book book;
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
@@ -41,7 +42,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        Book book = libraryConsole.addingOfTheBook();
+        book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
         logger.info("Book created successfully.");
@@ -51,29 +52,99 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
+        List<Book> tempBook = new ArrayList<>();
+        int counter = 0;
         if (!bookList.isEmpty() && bookFile.exists()) {
             view.printSmallMessage("Enter book's name you want to delete: ");
             String bookName = libraryConsole.printing();
-            int counter = 0;
+            String author;
             for (Book book : bookList) {
                 if (book.getName().equals(bookName)) {
-                    bookList.remove(book);
-                    writeIntoTheFile(bookList);
-                    logger.info("Deletion of the book successfully.");
+                    tempBook.add(book);
                     counter++;
                 } else {
                     counter--;
                 }
             }
-            if (counter < 0) {
+
+            if (tempBook.size() > 1) {
+                view.printSmallMessage("Enter the author name: ");
+                author = libraryConsole.printing();
+                int counter2 = 0;
+                boolean check = false;
+                for (Book book1 : bookList) {
+                    if (book1.getAuthor().equals(author) && book1.getName().equals(bookName)) {
+                        bookList.remove(book1);
+                        writeIntoTheFile(bookList);
+                        view.printMessage("Deleted successfully!");
+                        logger.info("Deletion of the book successfully.");
+                        counter2++;
+                        check = true;
+                    } else {
+                        counter2--;
+                    }
+                }
+                if (counter2 < 0 && !check) {
+                    view.printMessage("No book with such author!");
+                    logger.info("No such books.");
+                }
+            } else if (tempBook.size() == 1) {
+                int counter3 = 0;
+                for (Book book2 : bookList) {
+                    if (book2.getName().equals(bookName)) {
+                        bookList.remove(book2);
+                        writeIntoTheFile(bookList);
+                        view.printMessage("Deleted successfully!");
+                        logger.info("Deletion of the book successfully.");
+                    } else {
+                        counter3--;
+                    }
+                }
+                if (counter3 < 0) {
+                    view.printMessage("No book with such name!");
+                    logger.info("No such books.");
+                }
+            }
+            if (counter < 0 && -counter == bookList.size()) {
                 view.printMessage("No book with such name!");
                 logger.info("No such books.");
             }
         } else {
             view.printMessage("No books in the collection!");
             logger.info("Empty collection.");
+
         }
+
     }
+
+
+//    void deleteBook() {
+//        if (bookFile.exists()) {
+//            readFromTheFile();
+//        }
+//        if (!bookList.isEmpty() && bookFile.exists()) {
+//            view.printSmallMessage("Enter book's name you want to delete: ");
+//            String bookName = libraryConsole.printing();
+//            int counter = 0;
+//            for (Book book : bookList) {
+//                if (book.getName().equals(bookName)) {
+//                    bookList.remove(book);
+//                    writeIntoTheFile(bookList);
+//                    logger.info("Deletion of the book successfully.");
+//                    counter++;
+//                } else {
+//                    counter--;
+//                }
+//            }
+//            if (counter < 0) {
+//                view.printMessage("No book with such name!");
+//                logger.info("No such books.");
+//            }
+//        } else {
+//            view.printMessage("No books in the collection!");
+//            logger.info("Empty collection.");
+//        }
+//    }
 
     void viewBooksByAuthor() {
         viewInfoBySetCriteria("author", 1);
