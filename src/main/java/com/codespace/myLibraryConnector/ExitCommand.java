@@ -1,7 +1,7 @@
 package com.codespace.myLibraryConnector;
 
 public class ExitCommand implements Command{
-    LibraryActivities libraryActivities;
+    private LibraryActivities libraryActivities;
 
     public ExitCommand(LibraryActivities libraryActivities) {
         this.libraryActivities = libraryActivities;

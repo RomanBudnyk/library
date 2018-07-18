@@ -1,7 +1,7 @@
 package com.codespace.myLibraryConnector;
 
 public class DeleteBookCommand implements Command {
-    LibraryActivities libraryActivities;
+    private LibraryActivities libraryActivities;
 
     public DeleteBookCommand(LibraryActivities libraryActivities) {
         this.libraryActivities = libraryActivities;

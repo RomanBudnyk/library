@@ -1,7 +1,7 @@
 package com.codespace.myLibraryConnector;
 
 public class ViewAllBooksCommand implements Command {
-    LibraryActivities libraryActivities;
+    private LibraryActivities libraryActivities;
 
     public ViewAllBooksCommand(LibraryActivities libraryActivities) {
         this.libraryActivities = libraryActivities;

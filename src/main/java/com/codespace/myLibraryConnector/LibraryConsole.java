@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 class LibraryConsole {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
-    private Book book;
 
     Book addingOfTheBook() {
         System.out.print("Enter author's name: ");
@@ -27,14 +26,12 @@ class LibraryConsole {
         int pages = validationInt("Count of book's pages ");
         System.out.print("Enter book's genre: ");
         String genre = validationString("Genre ");
-        book = new Book(author, bookName, publisherName, yearOfPublisher, publisherCity, yearOfBook, pages, genre);
-        return book;
+        return new Book(author, bookName, publisherName, yearOfPublisher, publisherCity, yearOfBook, pages, genre);
     }
 
     String printing() {
         Scanner scanner = new Scanner(System.in);
-        String string = scanner.nextLine();
-        return string;
+        return scanner.nextLine();
     }
 
     private String validationString(String name) {
