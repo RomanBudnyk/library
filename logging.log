@@ -419,3 +419,65 @@
 2018-07-18 14:49:46 INFO  LibraryActivities:34 - Reading from file successfully.
 2018-07-18 14:49:46 INFO  LibraryActivities:179 - Printed all books.
 2018-07-18 14:49:50 INFO  LibraryActivities:187 - Exit from the program.
+2018-07-18 21:15:05 INFO  Main:11 - App started.
+2018-07-18 21:15:07 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:15:07 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:15:13 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:15:15 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:15:15 INFO  LibraryActivities:98 - Deletion of the book successfully.
+2018-07-18 21:16:36 INFO  Main:11 - App started.
+2018-07-18 21:16:38 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:16:38 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:16:45 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:16:46 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:16:46 INFO  LibraryActivities:98 - Deletion of the book successfully.
+2018-07-18 21:16:46 INFO  LibraryActivities:105 - No such books.
+2018-07-18 21:16:55 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:16:55 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:17:02 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:17:04 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:17:04 INFO  LibraryActivities:98 - Deletion of the book successfully.
+2018-07-18 21:17:08 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:17:08 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:17:12 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:17:12 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:17:15 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:17:15 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:17:38 INFO  Main:11 - App started.
+2018-07-18 21:17:44 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:17:52 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:18:09 INFO  Main:11 - App started.
+2018-07-18 21:18:11 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:18:29 INFO  Main:11 - App started.
+2018-07-18 21:19:29 INFO  Main:11 - App started.
+2018-07-18 21:19:30 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:19:30 INFO  LibraryActivities:182 - Empty collection.
+2018-07-18 21:19:34 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:19:43 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:19:43 INFO  LibraryActivities:48 - Book created successfully.
+2018-07-18 21:19:44 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:19:44 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:19:47 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:19:57 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:19:57 INFO  LibraryActivities:48 - Book created successfully.
+2018-07-18 21:19:58 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:19:58 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:20:03 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:05 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:20:05 INFO  LibraryActivities:98 - Deletion of the book successfully.
+2018-07-18 21:20:08 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:08 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:20:13 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:13 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:20:18 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:20:18 INFO  LibraryActivities:164 - Collection sorted by author.
+2018-07-18 21:20:23 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:23 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:20:28 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:28 INFO  LibraryActivities:179 - Printed all books.
+2018-07-18 21:20:30 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:32 INFO  LibraryActivities:23 - Collection has been written into file successfully.
+2018-07-18 21:20:32 INFO  LibraryActivities:98 - Deletion of the book successfully.
+2018-07-18 21:20:34 INFO  LibraryActivities:34 - Reading from file successfully.
+2018-07-18 21:20:34 INFO  LibraryActivities:182 - Empty collection.
+2018-07-18 21:20:36 INFO  LibraryActivities:187 - Exit from the program.

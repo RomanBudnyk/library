@@ -52,7 +52,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        List<Book> tempBook = new ArrayList<>();
+        List<Book> tempBook = new LinkedList<>();
         int counter = 0;
         if (!bookList.isEmpty() && bookFile.exists()) {
             view.printSmallMessage("Enter book's name you want to delete: ");
@@ -171,8 +171,8 @@ public class LibraryActivities {
     }
 
     void viewAllBooks() {
-        if (!bookList.isEmpty() || bookFile.exists()) {
-            readFromTheFile();
+        readFromTheFile();
+        if (!bookList.isEmpty()) {
             for (Book book : bookList) {
                 printBook(book);
             }
