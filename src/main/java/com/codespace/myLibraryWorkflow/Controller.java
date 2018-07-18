@@ -42,7 +42,7 @@ public class Controller {
                     break;
                 case 3:
                     view.printCriteriaForViewing();
-                    int itemForView = inputItemForSubmenu(3);
+                    int itemForView = inputItem(3);
                     switch (itemForView) {
                         case 1:
                             view.printMessage(View.RESULT);
@@ -101,23 +101,23 @@ public class Controller {
         }
     }
 
-    private int inputItemForSubmenu(int a) {
-
-        while (true) {
-            view.printMessage(View.INVITATION);
-
-            try {
-                Scanner scanner = new Scanner(System.in);
-                int item = scanner.nextInt();
-                if (item > 0 && item <= a) {
-                    return item;
-                } else {
-                    view.printMessage(View.ERROR);
-                }
-            } catch (InputMismatchException e) {
-                System.out.println("Please enter valid number!");
-            }
-        }
-    }
+//    private int inputItemForSubmenu(int a) {
+//
+//        while (true) {
+//            view.printMessage(View.INVITATION);
+//
+//            try {
+//                Scanner scanner = new Scanner(System.in);
+//                int item = scanner.nextInt();
+//                if (item > 0 && item <= a) {
+//                    return item;
+//                } else {
+//                    view.printMessage(View.ERROR);
+//                }
+//            } catch (InputMismatchException e) {
+//                System.out.println("Please enter valid number!");
+//            }
+//        }
+//    }
 
 }

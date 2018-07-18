@@ -13,7 +13,7 @@ class Invoker {
     private Command viewAll;
     private Command exit;
 
-    public Invoker(Command add, Command delete, Command viewByAuthor, Command viewByPublisher, Command viewByGenre, Command sortByAuthor, Command sortByGenre, Command viewAll, Command exit) {
+    Invoker(Command add, Command delete, Command viewByAuthor, Command viewByPublisher, Command viewByGenre, Command sortByAuthor, Command sortByGenre, Command viewAll, Command exit) {
         this.add = add;
         this.delete = delete;
         this.viewByAuthor = viewByAuthor;
