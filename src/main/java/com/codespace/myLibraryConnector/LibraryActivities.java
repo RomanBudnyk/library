@@ -99,7 +99,7 @@ public class LibraryActivities {
     }
 
     void viewAllBooks() {
-        if (!bookList.isEmpty()) {
+        if (bookFile.exists()) {
             readFromTheFile();
             for (Book book : bookList) {
                 printBook(book);
