@@ -2,7 +2,6 @@ package com.codespace.myLibraryConnector;
 
 import com.codespace.myLibraryView.View;
 import org.apache.log4j.Logger;
-
 import java.io.*;
 import java.util.*;
 
@@ -13,29 +12,6 @@ public class LibraryActivities {
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
-
-    private void writeIntoTheFile(List<Book> list) {
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream(bookFile);
-            ObjectOutputStream out = new ObjectOutputStream(fileOutputStream);
-            out.writeObject(list);
-            logger.info("Collection has been written into file successfully.");
-        } catch (IOException e) {
-            e.printStackTrace();
-            logger.error(e);
-        }
-    }
-
-    @SuppressWarnings("unchecked")
-    private void readFromTheFile() {
-        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(bookFile))) {
-            bookList = (List<Book>) objectInputStream.readObject();
-            logger.info("Reading from file successfully.");
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-            logger.error(e);
-        }
-    }
 
     void addNewBook() {
         if (bookFile.exists()) {
@@ -196,6 +172,29 @@ public class LibraryActivities {
         } else {
             view.printMessage("No books in the collection!");
             logger.info("Empty collection.");
+        }
+    }
+
+    private void writeIntoTheFile(List<Book> list) {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(bookFile);
+            ObjectOutputStream out = new ObjectOutputStream(fileOutputStream);
+            out.writeObject(list);
+            logger.info("Collection has been written into file successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error(e);
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void readFromTheFile() {
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(bookFile))) {
+            bookList = (List<Book>) objectInputStream.readObject();
+            logger.info("Reading from file successfully.");
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            logger.error(e);
         }
     }
 }
