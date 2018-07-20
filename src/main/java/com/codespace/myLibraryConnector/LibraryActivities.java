@@ -10,7 +10,6 @@ public class LibraryActivities {
     private static final Logger logger = Logger.getLogger(LibraryActivities.class);
 
     private List<Book> bookList = new LinkedList<>();
-    private Book book;
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
@@ -42,7 +41,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        book = libraryConsole.addingOfTheBook();
+        Book book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
         logger.info("Book created successfully.");
@@ -66,7 +65,6 @@ public class LibraryActivities {
                     counter--;
                 }
             }
-
             if (tempBook.size() > 1) {
                 view.printSmallMessage("Enter the author name: ");
                 author = libraryConsole.printing();
@@ -112,9 +110,7 @@ public class LibraryActivities {
         } else {
             view.printMessage("No books in the collection!");
             logger.info("Empty collection.");
-
         }
-
     }
 
 
