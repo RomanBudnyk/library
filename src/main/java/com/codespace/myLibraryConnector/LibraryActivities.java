@@ -14,29 +14,6 @@ public class LibraryActivities {
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
 
-    private void writeIntoTheFile(List<Book> list) {
-        try {
-            FileOutputStream fileOutputStream = new FileOutputStream(bookFile);
-            ObjectOutputStream out = new ObjectOutputStream(fileOutputStream);
-            out.writeObject(list);
-            logger.info("Collection has been written into file successfully.");
-        } catch (IOException e) {
-            e.printStackTrace();
-            logger.error(e);
-        }
-    }
-
-    @SuppressWarnings("unchecked")
-    private void readFromTheFile() {
-        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(bookFile))) {
-            bookList = (List<Book>) objectInputStream.readObject();
-            logger.info("Reading from file successfully.");
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-            logger.error(e);
-        }
-    }
-
     void addNewBook() {
         if (bookFile.exists()) {
             readFromTheFile();
@@ -51,7 +28,7 @@ public class LibraryActivities {
         if (bookFile.exists()) {
             readFromTheFile();
         }
-        List<Book> tempBook = new ArrayList<>();
+        List<Book> tempBook = new LinkedList<>();
         int counter = 0;
         if (!bookList.isEmpty() && bookFile.exists()) {
             view.printSmallMessage("Enter book's name you want to delete: ");
@@ -70,7 +47,8 @@ public class LibraryActivities {
                 author = libraryConsole.printing();
                 int counter2 = 0;
                 boolean check = false;
-                for (Book book1 : bookList) {
+                List<Book> copy = new LinkedList<>(bookList);
+                for (Book book1 : copy) {
                     if (book1.getAuthor().equals(author) && book1.getName().equals(bookName)) {
                         bookList.remove(book1);
                         writeIntoTheFile(bookList);
@@ -88,7 +66,8 @@ public class LibraryActivities {
                 }
             } else if (tempBook.size() == 1) {
                 int counter3 = 0;
-                for (Book book2 : bookList) {
+                List<Book> copy = new LinkedList<>(bookList);
+                for (Book book2 : copy) {
                     if (book2.getName().equals(bookName)) {
                         bookList.remove(book2);
                         writeIntoTheFile(bookList);
@@ -98,7 +77,7 @@ public class LibraryActivities {
                         counter3--;
                     }
                 }
-                if (counter3 < 0) {
+                if (counter3 < 0 && -counter3 == copy.size()) {
                     view.printMessage("No book with such name!");
                     logger.info("No such books.");
                 }
@@ -112,35 +91,6 @@ public class LibraryActivities {
             logger.info("Empty collection.");
         }
     }
-
-
-//    void deleteBook() {
-//        if (bookFile.exists()) {
-//            readFromTheFile();
-//        }
-//        if (!bookList.isEmpty() && bookFile.exists()) {
-//            view.printSmallMessage("Enter book's name you want to delete: ");
-//            String bookName = libraryConsole.printing();
-//            int counter = 0;
-//            for (Book book : bookList) {
-//                if (book.getName().equals(bookName)) {
-//                    bookList.remove(book);
-//                    writeIntoTheFile(bookList);
-//                    logger.info("Deletion of the book successfully.");
-//                    counter++;
-//                } else {
-//                    counter--;
-//                }
-//            }
-//            if (counter < 0) {
-//                view.printMessage("No book with such name!");
-//                logger.info("No such books.");
-//            }
-//        } else {
-//            view.printMessage("No books in the collection!");
-//            logger.info("Empty collection.");
-//        }
-//    }
 
     void viewBooksByAuthor() {
         viewInfoBySetCriteria("author", 1);
@@ -167,8 +117,8 @@ public class LibraryActivities {
     }
 
     void viewAllBooks() {
-        if (!bookList.isEmpty() || bookFile.exists()) {
-            readFromTheFile();
+        readFromTheFile();
+        if (!bookList.isEmpty()) {
             for (Book book : bookList) {
                 printBook(book);
             }
@@ -223,6 +173,29 @@ public class LibraryActivities {
         } else {
             view.printMessage("No books in the collection!");
             logger.info("Empty collection.");
+        }
+    }
+
+    private void writeIntoTheFile(List<Book> list) {
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(bookFile);
+            ObjectOutputStream out = new ObjectOutputStream(fileOutputStream);
+            out.writeObject(list);
+            logger.info("Collection has been written into file successfully.");
+        } catch (IOException e) {
+            e.printStackTrace();
+            logger.error(e);
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void readFromTheFile() {
+        try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(bookFile))) {
+            bookList = (List<Book>) objectInputStream.readObject();
+            logger.info("Reading from file successfully.");
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+            logger.error(e);
         }
     }
 }
