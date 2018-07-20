@@ -1,6 +1,6 @@
 package com.codespace.myLibraryWorkflow;
 
-import com.codespace.myLibraryConnector.Command;
+import com.codespace.command.Command;
 
 class Invoker {
     private Command add;

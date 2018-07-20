@@ -14,7 +14,7 @@ public class LibraryActivities {
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
 
-    void addNewBook() {
+    public void addNewBook() {
         if (bookFile.exists()) {
             readFromTheFile();
         }
@@ -24,7 +24,7 @@ public class LibraryActivities {
         logger.info("Book created successfully.");
     }
 
-    void deleteBook() {
+    public void deleteBook() {
         if (bookFile.exists()) {
             readFromTheFile();
         }
@@ -92,31 +92,31 @@ public class LibraryActivities {
         }
     }
 
-    void viewBooksByAuthor() {
+    public void viewBooksByAuthor() {
         viewInfoBySetCriteria("author", 1);
     }
 
-    void viewBooksByPublisher() {
+    public void viewBooksByPublisher() {
         viewInfoBySetCriteria("publisher", 2);
     }
 
-    void viewBooksByGenre() {
+    public void viewBooksByGenre() {
         viewInfoBySetCriteria("genre", 3);
     }
 
-    void sortBooksByAuthor() {
+    public void sortBooksByAuthor() {
         bookList.sort((o1, o2) -> o1.getAuthor().compareToIgnoreCase(o2.getAuthor()));
         writeIntoTheFile(bookList);
         logger.info("Collection sorted by author.");
     }
 
-    void sortBooksByGenre() {
+    public void sortBooksByGenre() {
         bookList.sort((o1, o2) -> o1.getGenre().compareToIgnoreCase(o2.getGenre()));
         writeIntoTheFile(bookList);
         logger.info("Collection sorted by genre.");
     }
 
-    void viewAllBooks() {
+    public void viewAllBooks() {
         readFromTheFile();
         if (!bookList.isEmpty()) {
             for (Book book : bookList) {
@@ -129,7 +129,7 @@ public class LibraryActivities {
         }
     }
 
-    void exit() {
+    public void exit() {
         logger.info("Exit from the program.");
         System.exit(0);
     }

@@ -1,4 +1,7 @@
-package com.codespace.myLibraryConnector;
+package com.codespace.command.implementation;
+
+import com.codespace.command.Command;
+import com.codespace.myLibraryConnector.LibraryActivities;
 
 public class DeleteBookCommand implements Command {
     private LibraryActivities libraryActivities;

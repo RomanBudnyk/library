@@ -17465,3 +17465,10 @@
 2018-07-19 20:35:50 INFO  LibraryActivities:286 - Reading from file successfully.
 2018-07-19 20:35:50 INFO  LibraryActivities:216 - Printed all books.
 2018-07-19 20:36:40 INFO  LibraryActivities:224 - Exit from the program.
+2018-07-20 18:35:19 INFO  Main:11 - App started.
+2018-07-20 18:47:23 INFO  LibraryActivities:195 - Reading from file successfully.
+2018-07-20 18:47:28 INFO  LibraryActivities:184 - Collection has been written into file successfully.
+2018-07-20 18:47:28 INFO  LibraryActivities:24 - Book created successfully.
+2018-07-20 18:47:30 INFO  LibraryActivities:195 - Reading from file successfully.
+2018-07-20 18:47:30 INFO  LibraryActivities:125 - Printed all books.
+2018-07-20 18:47:32 INFO  LibraryActivities:133 - Exit from the program.

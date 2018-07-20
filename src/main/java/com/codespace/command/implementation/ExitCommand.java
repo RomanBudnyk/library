@@ -1,6 +1,9 @@
-package com.codespace.myLibraryConnector;
+package com.codespace.command.implementation;
 
-public class ExitCommand implements Command{
+import com.codespace.command.Command;
+import com.codespace.myLibraryConnector.LibraryActivities;
+
+public class ExitCommand implements Command {
     private LibraryActivities libraryActivities;
 
     public ExitCommand(LibraryActivities libraryActivities) {
