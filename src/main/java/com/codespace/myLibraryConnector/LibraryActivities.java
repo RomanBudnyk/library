@@ -117,7 +117,9 @@ public class LibraryActivities {
     }
 
     public void viewAllBooks() {
-        readFromTheFile();
+        if (bookFile.exists()) {
+            readFromTheFile();
+        }
         if (!bookList.isEmpty()) {
             for (Book book : bookList) {
                 printBook(book);

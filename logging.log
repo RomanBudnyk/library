@@ -17476,3 +17476,23 @@
 2018-07-27 21:09:12 INFO  LibraryActivities:195 - Reading from file successfully.
 2018-07-27 21:09:12 INFO  LibraryActivities:125 - Printed all books.
 2018-07-27 21:09:15 INFO  LibraryActivities:133 - Exit from the program.
+2018-07-27 22:11:53 INFO  Main:9 - App started.
+2018-07-27 22:11:58 INFO  LibraryActivities:195 - Reading from file successfully.
+2018-07-27 22:11:58 INFO  LibraryActivities:125 - Printed all books.
+2018-07-27 22:12:04 INFO  LibraryActivities:133 - Exit from the program.
+2018-07-27 22:12:16 INFO  Main:9 - App started.
+2018-07-27 22:12:17 ERROR LibraryActivities:198 - java.io.FileNotFoundException: bookcollection.txt (Не удается найти указанный файл)
+2018-07-27 22:12:17 INFO  LibraryActivities:128 - Empty collection.
+2018-07-27 22:12:59 INFO  LibraryActivities:133 - Exit from the program.
+2018-07-27 22:13:22 INFO  Main:9 - App started.
+2018-07-27 22:13:24 INFO  LibraryActivities:129 - Empty collection.
+2018-07-27 22:13:34 INFO  LibraryActivities:129 - Empty collection.
+2018-07-27 22:13:39 INFO  LibraryActivities:134 - Exit from the program.
+2018-07-27 22:14:29 INFO  Main:9 - App started.
+2018-07-27 22:14:58 INFO  LibraryActivities:129 - Empty collection.
+2018-07-27 22:15:05 INFO  Main:9 - App started.
+2018-07-27 22:15:25 INFO  Main:9 - App started.
+2018-07-27 22:15:56 INFO  LibraryActivities:129 - Empty collection.
+2018-07-27 22:16:00 INFO  Main:9 - App started.
+2018-07-27 22:16:23 INFO  LibraryActivities:130 - Empty collection.
+2018-07-27 22:16:29 INFO  LibraryActivities:135 - Exit from the program.
