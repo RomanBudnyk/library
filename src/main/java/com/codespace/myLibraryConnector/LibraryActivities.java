@@ -47,10 +47,12 @@ public class LibraryActivities {
                 author = libraryConsole.printing();
                 int counter2 = 0;
                 boolean check = false;
-                List<Book> copy = new LinkedList<>(bookList);
-                for (Book book1 : copy) {
-                    if (book1.getAuthor().equals(author) && book1.getName().equals(bookName)) {
-                        bookList.remove(book1);
+                Iterator<Book> iterator = bookList.iterator();
+                while (iterator.hasNext()) {
+                    Book book = iterator.next();
+                    if (book.getAuthor().equals(author) && book.getName().equals(bookName)) {
+//                        bookList.remove(book);
+                        iterator.remove();
                         writeIntoTheFile(bookList);
                         view.printMessage("Deleted successfully!");
                         logger.info("Deletion of the book successfully.");
@@ -65,19 +67,19 @@ public class LibraryActivities {
                     logger.info("No such books.");
                 }
             } else if (tempBook.size() == 1) {
-                int counter3 = 0;
-                List<Book> copy = new LinkedList<>(bookList);
-                for (Book book2 : copy) {
-                    if (book2.getName().equals(bookName)) {
-                        bookList.remove(book2);
+                Iterator<Book> iterator = bookList.iterator();
+                boolean check = false;
+                while (iterator.hasNext()) {
+                    Book book = iterator.next();
+                    if (book.getName().equals(bookName)) {
+                        iterator.remove();
                         writeIntoTheFile(bookList);
                         view.printMessage("Deleted successfully!");
                         logger.info("Deletion of the book successfully.");
-                    } else {
-                        counter3--;
+                        check = true;
                     }
                 }
-                if (counter3 < 0 && -counter3 == copy.size()) {
+                if (!check) {
                     view.printMessage("No book with such name!");
                     logger.info("No such books.");
                 }
@@ -91,6 +93,74 @@ public class LibraryActivities {
             logger.info("Empty collection.");
         }
     }
+
+//    public void deleteBook() {
+//        if (bookFile.exists()) {
+//            readFromTheFile();
+//        }
+//        List<Book> tempBook = new LinkedList<>();
+//        int counter = 0;
+//        if (!bookList.isEmpty() && bookFile.exists()) {
+//            view.printSmallMessage("Enter book's name you want to delete: ");
+//            String bookName = libraryConsole.printing();
+//            String author;
+//            for (Book book : bookList) {
+//                if (book.getName().equals(bookName)) {
+//                    tempBook.add(book);
+//                    counter++;
+//                } else {
+//                    counter--;
+//                }
+//            }
+//            if (tempBook.size() > 1) {
+//                view.printSmallMessage("Enter the author name: ");
+//                author = libraryConsole.printing();
+//                int counter2 = 0;
+//                boolean check = false;
+//                List<Book> copy = new LinkedList<>(bookList);
+//                for (Book book1 : copy) {
+//                    if (book1.getAuthor().equals(author) && book1.getName().equals(bookName)) {
+//                        bookList.remove(book1);
+//                        writeIntoTheFile(bookList);
+//                        view.printMessage("Deleted successfully!");
+//                        logger.info("Deletion of the book successfully.");
+//                        counter2++;
+//                        check = true;
+//                    } else {
+//                        counter2--;
+//                    }
+//                }
+//                if (counter2 < 0 && !check) {
+//                    view.printMessage("No book with such author!");
+//                    logger.info("No such books.");
+//                }
+//            } else if (tempBook.size() == 1) {
+//                int counter3 = 0;
+//                List<Book> copy = new LinkedList<>(bookList);
+//                for (Book book2 : copy) {
+//                    if (book2.getName().equals(bookName)) {
+//                        bookList.remove(book2);
+//                        writeIntoTheFile(bookList);
+//                        view.printMessage("Deleted successfully!");
+//                        logger.info("Deletion of the book successfully.");
+//                    } else {
+//                        counter3--;
+//                    }
+//                }
+//                if (counter3 < 0 && -counter3 == copy.size()) {
+//                    view.printMessage("No book with such name!");
+//                    logger.info("No such books.");
+//                }
+//            }
+//            if (counter < 0 && -counter == bookList.size()) {
+//                view.printMessage("No book with such name!");
+//                logger.info("No such books.");
+//            }
+//        } else {
+//            view.printMessage("No books in the collection!");
+//            logger.info("Empty collection.");
+//        }
+//    }
 
     public void viewBooksByAuthor() {
         viewInfoBySetCriteria("author", 1);
