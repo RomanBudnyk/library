@@ -17472,3 +17472,7 @@
 2018-07-20 18:47:30 INFO  LibraryActivities:195 - Reading from file successfully.
 2018-07-20 18:47:30 INFO  LibraryActivities:125 - Printed all books.
 2018-07-20 18:47:32 INFO  LibraryActivities:133 - Exit from the program.
+2018-07-27 21:09:10 INFO  Main:9 - App started.
+2018-07-27 21:09:12 INFO  LibraryActivities:195 - Reading from file successfully.
+2018-07-27 21:09:12 INFO  LibraryActivities:125 - Printed all books.
+2018-07-27 21:09:15 INFO  LibraryActivities:133 - Exit from the program.
