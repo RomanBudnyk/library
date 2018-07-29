@@ -35,7 +35,7 @@ class LibraryConsole {
             Scanner scanner = new Scanner(System.in);
             resultOfPrinting = scanner.nextLine();
             if (resultOfPrinting.equals("")) {
-                System.out.print("Empty input!");
+                System.out.print("Empty string");
                 logger.error("Empty string");
             }
         } while (resultOfPrinting.equals(""));
@@ -43,8 +43,16 @@ class LibraryConsole {
     }
 
     int printingInt() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextInt();
+        int field = 0;
+        do {
+            try {
+                Scanner scannerInt = new Scanner(System.in);
+                field = scannerInt.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.print("Wrong input! Please enter valid year of creation of the publisher: ");
+            }
+        } while (field == 0);
+        return field;
     }
 
     private String validationString(String name) {
@@ -70,7 +78,7 @@ class LibraryConsole {
 //                    System.out.println(name + "could not be empty! Please enter valid value: ");
 //                }
             } catch (InputMismatchException e) {
-                System.out.print("Wrong input! Please enter valid year of creation of the publisher: ");
+                System.out.print("Wrong input! Please enter valid value: ");
             } catch (NoSuchElementException e) {
                 System.out.println(name + "could not be empty! Please enter valid value: ");
             }

@@ -17627,3 +17627,75 @@
 2018-07-29 18:56:37 INFO  LibraryActivities:197 - Printed all books.
 2018-07-29 18:56:40 INFO  LibraryActivities:298 - Reading from file successfully.
 2018-07-29 18:56:44 INFO  LibraryActivities:236 - Exit from the program.
+2018-07-29 19:14:07 INFO  Main:9 - App started.
+2018-07-29 19:14:12 INFO  LibraryActivities:304 - Reading from file successfully.
+2018-07-29 19:14:12 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 19:14:16 INFO  LibraryActivities:304 - Reading from file successfully.
+2018-07-29 19:14:21 INFO  LibraryActivities:293 - Collection has been written into file successfully.
+2018-07-29 19:14:21 INFO  LibraryActivities:24 - Book created successfully.
+2018-07-29 19:14:24 INFO  LibraryActivities:304 - Reading from file successfully.
+2018-07-29 19:14:24 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 19:14:28 INFO  LibraryActivities:304 - Reading from file successfully.
+2018-07-29 19:21:42 INFO  Main:9 - App started.
+2018-07-29 19:21:45 ERROR LibraryActivities:313 - java.io.InvalidClassException: com.codespace.myLibraryConnector.Book; local class incompatible: stream classdesc serialVersionUID = 7822471132127934823, local class serialVersionUID = -5522442270275606662
+2018-07-29 19:22:49 INFO  Main:9 - App started.
+2018-07-29 19:22:51 INFO  LibraryActivities:310 - Reading from file successfully.
+2018-07-29 19:29:47 INFO  Main:9 - App started.
+2018-07-29 19:29:49 INFO  LibraryActivities:335 - Reading from file successfully.
+2018-07-29 19:29:49 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 19:29:56 INFO  LibraryActivities:335 - Reading from file successfully.
+2018-07-29 19:31:14 INFO  Main:9 - App started.
+2018-07-29 19:31:16 INFO  LibraryActivities:337 - Reading from file successfully.
+2018-07-29 19:31:16 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 19:31:20 INFO  LibraryActivities:337 - Reading from file successfully.
+2018-07-29 19:31:29 INFO  LibraryActivities:326 - Collection has been written into file successfully.
+2018-07-29 19:33:05 INFO  Main:9 - App started.
+2018-07-29 19:33:07 INFO  LibraryActivities:340 - Reading from file successfully.
+2018-07-29 19:33:09 INFO  LibraryActivities:267 - No book has found during editing of the book.
+2018-07-29 19:33:09 INFO  LibraryActivities:267 - No book has found during editing of the book.
+2018-07-29 19:33:09 INFO  LibraryActivities:329 - Collection has been written into file successfully.
+2018-07-29 19:38:57 INFO  Main:9 - App started.
+2018-07-29 19:39:01 INFO  LibraryActivities:344 - Reading from file successfully.
+2018-07-29 19:39:01 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 19:39:03 INFO  LibraryActivities:344 - Reading from file successfully.
+2018-07-29 19:39:07 INFO  LibraryActivities:271 - No book has found during editing of the book.
+2018-07-29 19:39:07 INFO  LibraryActivities:271 - No book has found during editing of the book.
+2018-07-29 19:39:07 INFO  LibraryActivities:333 - Collection has been written into file successfully.
+2018-07-29 19:39:34 INFO  Main:9 - App started.
+2018-07-29 19:39:35 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-07-29 19:39:37 INFO  LibraryActivities:273 - No book has found during editing of the book.
+2018-07-29 19:39:37 INFO  LibraryActivities:334 - Collection has been written into file successfully.
+2018-07-29 19:40:02 INFO  LibraryActivities:283 - Exit from the program.
+2018-07-29 20:35:14 INFO  Main:9 - App started.
+2018-07-29 20:35:16 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-07-29 20:35:16 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:35:18 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-07-29 20:35:25 INFO  LibraryActivities:334 - Collection has been written into file successfully.
+2018-07-29 20:35:25 INFO  LibraryActivities:24 - Book created successfully.
+2018-07-29 20:35:28 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-07-29 20:35:28 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:35:31 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-07-29 20:36:02 INFO  LibraryActivities:250 - Publisher year of the book 1231 has changed.
+2018-07-29 20:36:02 INFO  LibraryActivities:334 - Collection has been written into file successfully.
+2018-07-29 20:37:32 INFO  Main:9 - App started.
+2018-07-29 20:37:36 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:37:36 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:37:37 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:38:50 INFO  Main:9 - App started.
+2018-07-29 20:38:54 INFO  LibraryActivities:292 - Exit from the program.
+2018-07-29 20:38:58 INFO  Main:9 - App started.
+2018-07-29 20:39:01 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:39:01 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:39:03 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:41:37 INFO  Main:9 - App started.
+2018-07-29 20:41:40 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:41:40 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:41:42 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:41:55 INFO  LibraryActivities:238 - Book name of the book 1231 has changed.
+2018-07-29 20:41:55 INFO  LibraryActivities:343 - Collection has been written into file successfully.
+2018-07-29 20:42:00 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:42:00 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 20:42:03 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-29 20:42:30 INFO  LibraryActivities:262 - Year of the book 1231 has changed.
+2018-07-29 20:42:30 INFO  LibraryActivities:343 - Collection has been written into file successfully.
+2018-07-29 20:42:32 INFO  LibraryActivities:292 - Exit from the program.

@@ -202,12 +202,19 @@ public class LibraryActivities {
     }
 
     public void editBook() {
-        readFromTheFile();
+        if (bookFile.exists()) {
+            readFromTheFile();
+        }
         if (!bookList.isEmpty()) {
-            view.printSmallMessage("Please enter the book name you want to edit: ");
+            view.printMessage("Please enter the author and the book name you want to edit.");
+            view.printSmallMessage("Enter author: ");
+            String authorName = libraryConsole.printing();
+            view.printSmallMessage("Enter book name: ");
             String bookName = libraryConsole.printing();
+            boolean checkIfEdited = false;
             for (Book book : bookList) {
-                if (book.getName().equals(bookName)) {
+                if (book.getAuthor().equals(authorName) && book.getName().equals(bookName)) {
+                    checkIfEdited = true;
                     System.out.println(book.toString());
                     view.printMessage("Choose attribute you want to edit: ");
                     view.printAttributesOfTheBook();
@@ -216,15 +223,63 @@ public class LibraryActivities {
                     if (check > 0 && check <= 8) {
                         switch (check) {
                             case 1:
+                                view.printSmallMessage("Enter new value: ");
+                                String initialAuthor = book.getAuthor();
                                 book.setAuthor(libraryConsole.printing());
-                                logger.info("Author of the book " + book.getName() + " has changed.");
+                                view.printMessage("Author of the book " + initialAuthor + " has changed.");
+                                logger.info("Author of the book " + initialAuthor + " has changed.");
                                 break;
                             case 2:
+                                view.printSmallMessage("Enter new value: ");
+                                String initialName = book.getName();
+                                view.printSmallMessage("Enter new value: ");
                                 book.setName(libraryConsole.printing());
+                                view.printMessage("Book name of the book " + initialName + " has changed.");
+                                logger.info("Book name of the book " + initialName + " has changed.");
+                                break;
+                            case 3:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setPublisherName(libraryConsole.printing());
+                                view.printMessage("Publisher name of the book " + book.getName() + " has changed.");
+                                logger.info("Publisher name of the book " + book.getName() + " has changed.");
+                                break;
+                            case 4:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setPublisherYear(libraryConsole.printingInt());
+                                view.printMessage("Publisher year of the book " + book.getName() + " has changed.");
+                                logger.info("Publisher year of the book " + book.getName() + " has changed.");
+                                break;
+                            case 5:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setPublisherCity(libraryConsole.printing());
+                                view.printMessage("Publisher year of the book " + book.getName() + " has changed.");
+                                logger.info("Publisher year of the book " + book.getName() + " has changed.");
+                                break;
+                            case 6:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setYear(libraryConsole.printingInt());
+                                view.printMessage("Year of the book " + book.getName() + " has changed.");
+                                logger.info("Year of the book " + book.getName() + " has changed.");
+                                break;
+                            case 7:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setPages(libraryConsole.printingInt());
+                                view.printMessage("Pages of the book " + book.getName() + " has changed.");
+                                logger.info("Pages of the book " + book.getName() + " has changed.");
+                                break;
+                            case 8:
+                                view.printSmallMessage("Enter new value: ");
+                                book.setGenre(libraryConsole.printing());
+                                view.printMessage("Genre of the book " + book.getName() + " has changed.");
+                                logger.info("Genre of the book " + book.getName() + " has changed.");
+                                break;
                         }
-
                     }
                 }
+            }
+            if (!checkIfEdited){
+                view.printMessage("Such a book was not found.");
+                logger.info("No book has found during editing of the book.");
             }
         } else {
             view.printMessage("Collection is empty!");
