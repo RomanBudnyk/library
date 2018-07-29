@@ -19,6 +19,7 @@ public class Controller {
             new SortBooksByAuthorCommand(libraryActivities),
             new SortBooksByGenreCommand(libraryActivities),
             new ViewAllBooksCommand(libraryActivities),
+            new EditBookCommand(libraryActivities),
             new ExitCommand(libraryActivities)
     );
 
@@ -28,7 +29,7 @@ public class Controller {
         view.printMessage("\n");
         while (true) {
             view.printMenu();
-            int item = inputItem(6);
+            int item = inputItem(7);
             view:
             sort:
             switch (item) {
@@ -76,6 +77,10 @@ public class Controller {
                     invoker.viewAll();
                     break;
                 case 6:
+                    view.printMessage(View.RESULT);
+                    invoker.editBook();
+                    break;
+                case 7:
                     view.printMessage("Thank you for using our Library. See you next time!");
                     invoker.exit();
             }

@@ -34,6 +34,11 @@ class LibraryConsole {
         return scanner.nextLine();
     }
 
+    int printingInt() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
+
     private String validationString(String name) {
         String field;
         do {

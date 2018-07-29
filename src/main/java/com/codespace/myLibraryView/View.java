@@ -13,7 +13,8 @@ public class View {
         System.out.println("3. View all books by the criteria.");
         System.out.println("4. Sort books by the criteria.");
         System.out.println("5. View all the catalog.");
-        System.out.println("6. Exit from program.");
+        System.out.println("6. Edit the book in the catalog.");
+        System.out.println("7. Exit from program.");
     }
 
     public void printCriteriaForViewing() {
@@ -25,6 +26,17 @@ public class View {
     public void printCriteriaForSorting() {
         System.out.println("1. By author.");
         System.out.println("2. By genre.");
+    }
+
+    public void printAttributesOfTheBook() {
+        System.out.println("1. Author.");
+        System.out.println("2. Book name.");
+        System.out.println("3. Publisher name.");
+        System.out.println("4. Publisher year.");
+        System.out.println("5. Publisher city.");
+        System.out.println("6. Year of the book.");
+        System.out.println("7. Pages of the book.");
+        System.out.println("8. Genre of the book.");
     }
 
     public void printMessage(String message) {

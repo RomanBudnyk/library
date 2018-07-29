@@ -11,9 +11,11 @@ class Invoker {
     private Command sortByAuthor;
     private Command sortByGenre;
     private Command viewAll;
+    private Command editBook;
     private Command exit;
 
-    Invoker(Command add, Command delete, Command viewByAuthor, Command viewByPublisher, Command viewByGenre, Command sortByAuthor, Command sortByGenre, Command viewAll, Command exit) {
+    public Invoker(Command add, Command delete, Command viewByAuthor, Command viewByPublisher, Command viewByGenre,
+                   Command sortByAuthor, Command sortByGenre, Command viewAll, Command editBook, Command exit) {
         this.add = add;
         this.delete = delete;
         this.viewByAuthor = viewByAuthor;
@@ -22,6 +24,7 @@ class Invoker {
         this.sortByAuthor = sortByAuthor;
         this.sortByGenre = sortByGenre;
         this.viewAll = viewAll;
+        this.editBook = editBook;
         this.exit = exit;
     }
 
@@ -55,6 +58,10 @@ class Invoker {
 
     void viewAll() {
         viewAll.execute();
+    }
+
+    void editBook() {
+        editBook.execute();
     }
 
     void exit() {

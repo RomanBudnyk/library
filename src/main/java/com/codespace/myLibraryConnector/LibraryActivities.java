@@ -201,6 +201,35 @@ public class LibraryActivities {
         }
     }
 
+    public void editBook() {
+        readFromTheFile();
+        if (!bookList.isEmpty()) {
+            view.printSmallMessage("Please enter the book name you want to edit: ");
+            String bookName = libraryConsole.printing();
+            for (Book book : bookList) {
+                if (book.getName().equals(bookName)) {
+                    System.out.println(book.toString());
+                    view.printMessage("Choose attribute you want to edit: ");
+                    view.printAttributesOfTheBook();
+                    int check = libraryConsole.printingInt();
+                    if (check > 0 && check <= 8) {
+                        switch (check) {
+                            case 1:
+                                book.setAuthor(libraryConsole.printing());
+                                break;
+                            case 2:
+                                book.setName(libraryConsole.printing());
+                        }
+
+                    }
+                }
+            }
+        } else {
+            view.printMessage("Collection is empty!");
+            logger.info("Empty collection.");
+        }
+    }
+
     public void exit() {
         logger.info("Exit from the program.");
         System.exit(0);
