@@ -30,8 +30,16 @@ class LibraryConsole {
     }
 
     String printing() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        String resultOfPrinting;
+        do {
+            Scanner scanner = new Scanner(System.in);
+            resultOfPrinting = scanner.nextLine();
+            if (resultOfPrinting.equals("")) {
+                System.out.print("Empty input!");
+                logger.error("Empty string");
+            }
+        } while (resultOfPrinting.equals(""));
+        return resultOfPrinting;
     }
 
     int printingInt() {

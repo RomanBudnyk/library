@@ -211,11 +211,13 @@ public class LibraryActivities {
                     System.out.println(book.toString());
                     view.printMessage("Choose attribute you want to edit: ");
                     view.printAttributesOfTheBook();
+                    view.printSmallMessage(View.INVITATION);
                     int check = libraryConsole.printingInt();
                     if (check > 0 && check <= 8) {
                         switch (check) {
                             case 1:
                                 book.setAuthor(libraryConsole.printing());
+                                logger.info("Author of the book " + book.getName() + " has changed.");
                                 break;
                             case 2:
                                 book.setName(libraryConsole.printing());
@@ -228,6 +230,7 @@ public class LibraryActivities {
             view.printMessage("Collection is empty!");
             logger.info("Empty collection.");
         }
+        writeIntoTheFile(bookList);
     }
 
     public void exit() {

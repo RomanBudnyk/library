@@ -17597,3 +17597,33 @@
 2018-07-27 23:14:09 INFO  LibraryActivities:260 - Collection has been written into file successfully.
 2018-07-27 23:14:09 INFO  LibraryActivities:80 - Deletion of the book successfully.
 2018-07-27 23:14:38 INFO  LibraryActivities:209 - Exit from the program.
+2018-07-29 18:52:48 INFO  Main:9 - App started.
+2018-07-29 18:52:52 ERROR LibraryActivities:299 - java.io.InvalidClassException: com.codespace.myLibraryConnector.Book; local class incompatible: stream classdesc serialVersionUID = -2169528839826181919, local class serialVersionUID = 7822471132127934823
+2018-07-29 18:52:52 INFO  LibraryActivities:200 - Empty collection.
+2018-07-29 18:53:15 INFO  Main:9 - App started.
+2018-07-29 18:53:18 INFO  LibraryActivities:200 - Empty collection.
+2018-07-29 18:53:25 INFO  LibraryActivities:285 - Collection has been written into file successfully.
+2018-07-29 18:53:25 INFO  LibraryActivities:24 - Book created successfully.
+2018-07-29 18:53:26 INFO  LibraryActivities:296 - Reading from file successfully.
+2018-07-29 18:53:26 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:53:33 INFO  LibraryActivities:296 - Reading from file successfully.
+2018-07-29 18:53:49 INFO  LibraryActivities:296 - Reading from file successfully.
+2018-07-29 18:53:49 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:55:00 INFO  Main:9 - App started.
+2018-07-29 18:55:03 INFO  LibraryActivities:297 - Reading from file successfully.
+2018-07-29 18:55:03 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:55:08 INFO  LibraryActivities:297 - Reading from file successfully.
+2018-07-29 18:55:16 INFO  LibraryActivities:286 - Collection has been written into file successfully.
+2018-07-29 18:55:18 INFO  LibraryActivities:297 - Reading from file successfully.
+2018-07-29 18:55:18 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:55:22 INFO  LibraryActivities:235 - Exit from the program.
+2018-07-29 18:56:06 INFO  Main:9 - App started.
+2018-07-29 18:56:08 INFO  LibraryActivities:298 - Reading from file successfully.
+2018-07-29 18:56:14 INFO  LibraryActivities:298 - Reading from file successfully.
+2018-07-29 18:56:14 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:56:18 INFO  LibraryActivities:298 - Reading from file successfully.
+2018-07-29 18:56:36 INFO  LibraryActivities:287 - Collection has been written into file successfully.
+2018-07-29 18:56:37 INFO  LibraryActivities:298 - Reading from file successfully.
+2018-07-29 18:56:37 INFO  LibraryActivities:197 - Printed all books.
+2018-07-29 18:56:40 INFO  LibraryActivities:298 - Reading from file successfully.
+2018-07-29 18:56:44 INFO  LibraryActivities:236 - Exit from the program.
