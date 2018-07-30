@@ -17699,3 +17699,15 @@
 2018-07-29 20:42:30 INFO  LibraryActivities:262 - Year of the book 1231 has changed.
 2018-07-29 20:42:30 INFO  LibraryActivities:343 - Collection has been written into file successfully.
 2018-07-29 20:42:32 INFO  LibraryActivities:292 - Exit from the program.
+2018-07-30 12:00:44 INFO  Main:9 - App started.
+2018-07-30 12:00:54 INFO  LibraryActivities:200 - Empty collection.
+2018-07-30 12:01:01 INFO  LibraryActivities:343 - Collection has been written into file successfully.
+2018-07-30 12:01:01 INFO  LibraryActivities:24 - Book created successfully.
+2018-07-30 12:01:03 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-30 12:01:03 INFO  LibraryActivities:197 - Printed all books.
+2018-07-30 12:01:07 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-30 12:01:25 INFO  LibraryActivities:268 - Pages of the book 2312 has changed.
+2018-07-30 12:01:25 INFO  LibraryActivities:343 - Collection has been written into file successfully.
+2018-07-30 12:01:27 INFO  LibraryActivities:354 - Reading from file successfully.
+2018-07-30 12:01:27 INFO  LibraryActivities:197 - Printed all books.
+2018-07-30 12:01:30 INFO  LibraryActivities:292 - Exit from the program.
