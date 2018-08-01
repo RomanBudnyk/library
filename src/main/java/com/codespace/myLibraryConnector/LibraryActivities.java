@@ -13,7 +13,9 @@ public class LibraryActivities {
     private File bookFile = new File("bookcollection.txt");
     private LibraryConsole libraryConsole = new LibraryConsole();
     private View view = new View();
+    File dir = new File(".\\storage\\");
 
+    @Deprecated
     public void addNewBook() {
         if (bookFile.exists()) {
             readFromTheFile();
@@ -21,18 +23,21 @@ public class LibraryActivities {
         Book book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
-        File dir = new File(".\\storage\\");
+        addingBookToTheFile(book);
+        logger.info("Book created successfully.");
+    }
+
+    private void addingBookToTheFile(Book book) {
         if (!dir.exists()) {
             dir.mkdir();
         }
         String nameFile = book.getAuthor() + " - " + book.getName() + " (" + book.getPublisherName() + ", " + book.getYear() + ", " + book.getGenre() + ")";
         try {
-            File file = new File(dir, nameFile + ".txt");
-            file.createNewFile();
+            File bookName = new File(dir, nameFile + ".txt");
+            bookName.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        logger.info("Book created successfully.");
     }
 
     public void deleteBook() {
@@ -304,18 +309,42 @@ public class LibraryActivities {
             readFromTheFile();
         }
         if (!bookList.isEmpty()) {
-            view.printMessage("Please enter the author and the book name you want to edit.");
-            view.printSmallMessage("Enter author: ");
-            String authorName = libraryConsole.printing();
-            view.printSmallMessage("Enter book name: ");
-            String bookName = libraryConsole.printing();
-
-
+            File[] files = new File(".\\storage\\").listFiles();
+            if (files != null) {
+                if (files.length != 0) {
+                    view.printMessage("Please enter the author and the book name you want to open.");
+                    view.printSmallMessage("Enter author: ");
+                    String authorName = libraryConsole.printing();
+                    view.printSmallMessage("Enter book name: ");
+                    String bookName = libraryConsole.printing();
+                    for (File file : files) {
+                        if (file.isFile()) {
+                            String fileName = file.getName();
+                            fileName = fileName.substring(0, fileName.indexOf("(") - 1);
+                            String inputName = authorName + " - " + bookName;
+                            if (fileName.equals(inputName)) {
+                                ProcessBuilder processBuilder = new ProcessBuilder("Notepad.exe", dir + "\\" + file.getName());
+                                try {
+                                    processBuilder.start();
+                                    logger.info("Book opened.");
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            } else {
+                                view.printMessage("No books with this parameters in the catalog!");
+                                logger.info("No book found.");
+                            }
+                        }
+                    }
+                } else {
+                    view.printMessage("Storage is empty.");
+                    logger.info("Empty storage.");
+                }
+            }
         } else {
             view.printMessage("Collection is empty!");
             logger.info("Empty collection.");
         }
-
     }
 
     public void exit() {
