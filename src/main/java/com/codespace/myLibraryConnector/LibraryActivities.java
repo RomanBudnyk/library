@@ -288,6 +288,10 @@ public class LibraryActivities {
         writeIntoTheFile(bookList);
     }
 
+    public void readBook() {
+
+    }
+
     public void exit() {
         logger.info("Exit from the program.");
         System.exit(0);
