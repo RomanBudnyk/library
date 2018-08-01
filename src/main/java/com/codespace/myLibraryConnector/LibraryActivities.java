@@ -304,6 +304,7 @@ public class LibraryActivities {
         writeIntoTheFile(bookList);
     }
 
+
     public void readBook() {
         if (bookFile.exists()) {
             readFromTheFile();
