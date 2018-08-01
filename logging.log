@@ -17701,3 +17701,70 @@
 2018-07-29 20:42:32 INFO  LibraryActivities:292 - Exit from the program.
 2018-08-01 20:55:13 INFO  Main:9 - App started.
 2018-08-01 20:55:21 INFO  LibraryActivities:296 - Exit from the program.
+2018-08-01 21:09:31 INFO  Main:9 - App started.
+2018-08-01 21:09:34 INFO  LibraryActivities:374 - Reading from file successfully.
+2018-08-01 21:09:39 INFO  LibraryActivities:363 - Collection has been written into file successfully.
+2018-08-01 21:09:39 INFO  LibraryActivities:25 - Book created successfully.
+2018-08-01 21:09:45 INFO  LibraryActivities:374 - Reading from file successfully.
+2018-08-01 21:09:45 INFO  LibraryActivities:198 - Printed all books.
+2018-08-01 21:09:48 INFO  LibraryActivities:312 - Exit from the program.
+2018-08-01 21:10:46 INFO  Main:9 - App started.
+2018-08-01 21:10:47 INFO  LibraryActivities:379 - Reading from file successfully.
+2018-08-01 21:10:49 INFO  LibraryActivities:368 - Collection has been written into file successfully.
+2018-08-01 21:10:49 INFO  LibraryActivities:30 - Book created successfully.
+2018-08-01 21:12:22 INFO  Main:9 - App started.
+2018-08-01 21:12:24 INFO  LibraryActivities:380 - Reading from file successfully.
+2018-08-01 21:12:27 INFO  LibraryActivities:369 - Collection has been written into file successfully.
+2018-08-01 21:12:27 INFO  LibraryActivities:31 - Book created successfully.
+2018-08-01 21:12:44 INFO  LibraryActivities:318 - Exit from the program.
+2018-08-01 21:13:06 INFO  Main:9 - App started.
+2018-08-01 21:13:07 INFO  LibraryActivities:380 - Reading from file successfully.
+2018-08-01 21:13:11 INFO  LibraryActivities:369 - Collection has been written into file successfully.
+2018-08-01 21:13:11 INFO  LibraryActivities:31 - Book created successfully.
+2018-08-01 21:16:44 INFO  Main:9 - App started.
+2018-08-01 21:16:46 INFO  LibraryActivities:380 - Reading from file successfully.
+2018-08-01 21:16:49 INFO  LibraryActivities:369 - Collection has been written into file successfully.
+2018-08-01 21:16:49 INFO  LibraryActivities:31 - Book created successfully.
+2018-08-01 21:17:04 INFO  Main:9 - App started.
+2018-08-01 21:17:06 INFO  LibraryActivities:379 - Reading from file successfully.
+2018-08-01 21:17:08 INFO  LibraryActivities:368 - Collection has been written into file successfully.
+2018-08-01 21:17:08 INFO  LibraryActivities:30 - Book created successfully.
+2018-08-01 21:17:28 INFO  LibraryActivities:317 - Exit from the program.
+2018-08-01 21:20:27 INFO  Main:9 - App started.
+2018-08-01 21:20:28 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:20:32 INFO  LibraryActivities:371 - Collection has been written into file successfully.
+2018-08-01 21:20:32 INFO  LibraryActivities:33 - Book created successfully.
+2018-08-01 21:20:42 INFO  LibraryActivities:320 - Exit from the program.
+2018-08-01 21:21:01 INFO  Main:9 - App started.
+2018-08-01 21:21:02 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:21:03 ERROR LibraryActivities:65 - Empty string
+2018-08-01 21:21:06 INFO  LibraryActivities:371 - Collection has been written into file successfully.
+2018-08-01 21:21:06 INFO  LibraryActivities:33 - Book created successfully.
+2018-08-01 21:21:34 INFO  LibraryActivities:320 - Exit from the program.
+2018-08-01 21:21:42 INFO  Main:9 - App started.
+2018-08-01 21:21:45 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:21:48 INFO  LibraryActivities:371 - Collection has been written into file successfully.
+2018-08-01 21:21:48 INFO  LibraryActivities:33 - Book created successfully.
+2018-08-01 21:22:02 INFO  LibraryActivities:320 - Exit from the program.
+2018-08-01 21:22:06 INFO  Main:9 - App started.
+2018-08-01 21:22:08 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:22:11 INFO  LibraryActivities:371 - Collection has been written into file successfully.
+2018-08-01 21:22:11 INFO  LibraryActivities:33 - Book created successfully.
+2018-08-01 21:22:16 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:22:16 INFO  LibraryActivities:206 - Printed all books.
+2018-08-01 21:22:18 INFO  LibraryActivities:320 - Exit from the program.
+2018-08-01 21:24:02 INFO  Main:9 - App started.
+2018-08-01 21:24:04 INFO  LibraryActivities:382 - Reading from file successfully.
+2018-08-01 21:24:06 INFO  LibraryActivities:371 - Collection has been written into file successfully.
+2018-08-01 21:24:06 INFO  LibraryActivities:33 - Book created successfully.
+2018-08-01 21:24:08 INFO  LibraryActivities:320 - Exit from the program.
+2018-08-01 21:25:25 INFO  Main:9 - App started.
+2018-08-01 21:25:27 INFO  LibraryActivities:384 - Reading from file successfully.
+2018-08-01 21:25:31 INFO  LibraryActivities:373 - Collection has been written into file successfully.
+2018-08-01 21:25:31 INFO  LibraryActivities:35 - Book created successfully.
+2018-08-01 21:25:35 INFO  LibraryActivities:322 - Exit from the program.
+2018-08-01 21:25:43 INFO  Main:9 - App started.
+2018-08-01 21:25:45 INFO  LibraryActivities:384 - Reading from file successfully.
+2018-08-01 21:25:47 INFO  LibraryActivities:373 - Collection has been written into file successfully.
+2018-08-01 21:25:47 INFO  LibraryActivities:35 - Book created successfully.
+2018-08-01 21:25:56 INFO  LibraryActivities:322 - Exit from the program.

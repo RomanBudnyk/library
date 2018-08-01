@@ -21,6 +21,17 @@ public class LibraryActivities {
         Book book = libraryConsole.addingOfTheBook();
         bookList.add(book);
         writeIntoTheFile(bookList);
+        File dir = new File(".\\storage\\");
+        if (!dir.exists()) {
+            dir.mkdir();
+        }
+        String nameFile = book.getAuthor() + " - " + book.getName() + " (" + book.getPublisherName() + ", " + book.getYear() + ", " + book.getGenre() + ")";
+        try {
+            File file = new File(dir, nameFile + ".txt");
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         logger.info("Book created successfully.");
     }
 
@@ -277,7 +288,7 @@ public class LibraryActivities {
                     }
                 }
             }
-            if (!checkIfEdited){
+            if (!checkIfEdited) {
                 view.printMessage("Such a book was not found.");
                 logger.info("No book has found during editing of the book.");
             }
@@ -289,6 +300,21 @@ public class LibraryActivities {
     }
 
     public void readBook() {
+        if (bookFile.exists()) {
+            readFromTheFile();
+        }
+        if (!bookList.isEmpty()) {
+            view.printMessage("Please enter the author and the book name you want to edit.");
+            view.printSmallMessage("Enter author: ");
+            String authorName = libraryConsole.printing();
+            view.printSmallMessage("Enter book name: ");
+            String bookName = libraryConsole.printing();
+
+
+        } else {
+            view.printMessage("Collection is empty!");
+            logger.info("Empty collection.");
+        }
 
     }
 
