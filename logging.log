@@ -17699,3 +17699,5 @@
 2018-07-29 20:42:30 INFO  LibraryActivities:262 - Year of the book 1231 has changed.
 2018-07-29 20:42:30 INFO  LibraryActivities:343 - Collection has been written into file successfully.
 2018-07-29 20:42:32 INFO  LibraryActivities:292 - Exit from the program.
+2018-08-01 20:55:13 INFO  Main:9 - App started.
+2018-08-01 20:55:21 INFO  LibraryActivities:296 - Exit from the program.
