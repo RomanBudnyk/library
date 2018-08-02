@@ -14,7 +14,8 @@ public class View {
         System.out.println("4. Sort books by the criteria.");
         System.out.println("5. View all the catalog.");
         System.out.println("6. Edit the book in the catalog.");
-        System.out.println("7. Exit from program.");
+        System.out.println("7. Read book.");
+        System.out.println("8. Exit from program.");
     }
 
     public void printCriteriaForViewing() {
