@@ -15,7 +15,6 @@ public class LibraryActivities {
     private View view = new View();
     File dir = new File(".\\storage\\");
 
-    @Deprecated
     public void addNewBook() {
         if (bookFile.exists()) {
             readFromTheFile();
@@ -27,7 +26,7 @@ public class LibraryActivities {
         logger.info("Book created successfully.");
     }
 
-    private void addingBookToTheFile(Book book) {
+    public void addingBookToTheFile(Book book) {
         if (!dir.exists()) {
             dir.mkdir();
         }
@@ -132,7 +131,6 @@ public class LibraryActivities {
         writeIntoTheFile(bookList);
         logger.info("Collection sorted by genre.");
     }
-
 
     public void viewAllBooks() {
         if (bookFile.exists()) {

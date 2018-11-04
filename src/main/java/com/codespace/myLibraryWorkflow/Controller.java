@@ -34,7 +34,6 @@ public class Controller {
             view:
             sort:
             switch (item) {
-
                 case 1:
                     view.printMessage(View.RESULT);
                     invoker.add();

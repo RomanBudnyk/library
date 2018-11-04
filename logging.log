@@ -17711,3 +17711,44 @@
 2018-07-30 12:01:27 INFO  LibraryActivities:354 - Reading from file successfully.
 2018-07-30 12:01:27 INFO  LibraryActivities:197 - Printed all books.
 2018-07-30 12:01:30 INFO  LibraryActivities:292 - Exit from the program.
+2018-08-24 15:16:33 INFO  Main:9 - App started.
+2018-08-24 15:16:38 INFO  LibraryActivities:278 - Empty collection.
+2018-08-24 15:16:54 INFO  LibraryActivities:334 - Collection has been written into file successfully.
+2018-08-24 15:16:54 INFO  LibraryActivities:27 - Book created successfully.
+2018-08-24 15:16:56 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-08-24 15:16:56 INFO  LibraryActivities:145 - Printed all books.
+2018-08-24 15:17:00 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-08-24 15:17:11 INFO  LibraryActivities:261 - Book opened.
+2018-08-24 15:17:15 INFO  LibraryActivities:283 - Exit from the program.
+2018-09-15 00:45:24 INFO  Main:9 - App started.
+2018-09-15 00:45:28 INFO  LibraryActivities:345 - Reading from file successfully.
+2018-09-15 00:45:28 INFO  LibraryActivities:145 - Printed all books.
+2018-09-15 00:45:32 INFO  LibraryActivities:283 - Exit from the program.
+2018-09-15 00:48:10 INFO  Main:9 - App started.
+2018-09-15 00:48:14 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-09-15 00:48:24 INFO  LibraryActivities:332 - Collection has been written into file successfully.
+2018-09-15 00:48:24 INFO  LibraryActivities:26 - Book created successfully.
+2018-09-15 00:48:28 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-09-15 00:48:28 INFO  LibraryActivities:143 - Printed all books.
+2018-09-15 00:48:31 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-09-15 00:48:45 INFO  LibraryActivities:265 - No book found.
+2018-09-15 00:48:45 INFO  LibraryActivities:259 - Book opened.
+2018-09-15 00:48:54 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-09-15 00:49:13 INFO  LibraryActivities:220 - Genre of the book fsdsd has changed.
+2018-09-15 00:49:13 INFO  LibraryActivities:332 - Collection has been written into file successfully.
+2018-09-15 00:49:21 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-09-15 00:49:21 INFO  LibraryActivities:143 - Printed all books.
+2018-09-15 00:49:29 INFO  LibraryActivities:281 - Exit from the program.
+2018-10-21 19:29:01 INFO  Main:9 - App started.
+2018-10-21 19:29:04 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-10-21 19:29:04 INFO  LibraryActivities:143 - Printed all books.
+2018-10-21 19:29:08 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-10-21 19:29:14 INFO  LibraryActivities:332 - Collection has been written into file successfully.
+2018-10-21 19:29:14 INFO  LibraryActivities:92 - Deletion of the book successfully.
+2018-10-21 19:29:16 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-10-21 19:29:16 INFO  LibraryActivities:143 - Printed all books.
+2018-10-21 19:29:23 INFO  LibraryActivities:343 - Reading from file successfully.
+2018-10-21 19:29:31 ERROR LibraryActivities:39 - Empty string
+2018-10-21 19:29:33 INFO  LibraryActivities:265 - No book found.
+2018-10-21 19:29:33 INFO  LibraryActivities:259 - Book opened.
+2018-10-21 19:29:59 INFO  LibraryActivities:281 - Exit from the program.

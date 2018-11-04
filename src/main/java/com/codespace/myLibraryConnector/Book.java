@@ -116,7 +116,6 @@ public class Book implements Serializable {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(author, name, publisherName, publisherYear, publisherCity, year, pages, genre);
     }
 }
